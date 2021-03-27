@@ -16,7 +16,7 @@ footer.href = "https://www.instagram.com/adamukti/";
 function time() {
   var d = new Date();
   var n = d.getHours();
-  
+  console.log(n);
   if (n >= 5 && n <= 10) {
     return "Pagi"
   } else if (n >= 10 && n <= 15) {
