@@ -39,6 +39,9 @@ function makan() {
     case "Malam":
       return "makan malam"
       break;
+      case "Sore":
+      return "makan"
+      break;
     default:
       break;
   }
