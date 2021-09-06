@@ -94,50 +94,5 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       '',
                       'error'
                     ).then((result) => {
-                      Swal.fire('Aku dukung kamu terus ko').then((result) => {
-                        Swal.fire({
-                          title: 'Oh iya aku mau nanya',
-                          text: 'Ada sesuatu yang lagi kamu pingin ga?',
-                          showDenyButton: true,
-                          confirmButtonText: `Ada by`,
-                          denyButtonText: `Ga ada ko`,
-                        }).then((result) => {
-                          /* Read more about isConfirmed, isDenied below */
-                          if (result.isConfirmed) {
-                            Swal.fire({
-                              title: 'Mau apa?',
-                              input: 'text',
-                              inputPlaceholder: 'ex: Seblacc, boba, or etc',
-                              showCancelButton: false,
-                              inputValidator: (value) => {
-                                if (!value) {
-                                  return 'Isi dulu dong by'
-                                }
-                              }
-                            }).then((result) => {
-                              Swal.fire('Okey by', 'Nanti aku kabulin kemauan kamu yaa', 'success').then((result) => {
-                                Swal.fire("See ya! Aku kangen ^^").then((result) => {
-                                  selesai()
-                                });
-                              })
-                            })
-                          } else if (result.isDenied) {
-                            Swal.fire('Oh okedeh kalo ga ada').then((result) => {
-                              Swal.fire("See ya! Aku kangen ^^").then((result) => {
-                                selesai()
-                              });
-                            })
-                          }
-                        })
-                      })
-                    })
-                  })
-                })
-              }
-            })
-          }
-        })
-      })
-    }
-  })
-});
+                      Swal.fire('bismillah kamu pasti bisa').then((result) => {
+                        Swal.fire(
