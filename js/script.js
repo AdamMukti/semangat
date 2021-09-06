@@ -6,12 +6,12 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-  doi = "Irna";
+  doi = "wandaa";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = doi;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.instagram.com/adam/";
 
 function time() {
   var d = new Date();
@@ -59,7 +59,7 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-    title: 'Hai byy!',
+    title: 'Hai wandaa!',
     html: `Selamat ${time()}, Kamu udah ${makan()}?`,
     timer: 2500,
     timerProgressBar: true,
@@ -97,7 +97,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       Swal.fire('Aku dukung kamu terus ko').then((result) => {
                         Swal.fire({
                           title: 'Oh iya aku mau nanya',
-                          text: 'Ada sesuatu yang lagi kamu pingin ga?',
+                          text: 'Apa ada yang bisa aku bantu ?',
                           showDenyButton: true,
                           confirmButtonText: `Ada by`,
                           denyButtonText: `Ga ada ko`,
@@ -107,7 +107,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                             Swal.fire({
                               title: 'Mau apa?',
                               input: 'text',
-                              inputPlaceholder: 'ex: Seblacc, boba, or etc',
+                              inputPlaceholder: 'ex: apa yang bisa dibantu',
                               showCancelButton: false,
                               inputValidator: (value) => {
                                 if (!value) {
@@ -115,7 +115,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                                 }
                               }
                             }).then((result) => {
-                              Swal.fire('Okey by', 'Nanti aku kabulin kemauan kamu yaa', 'success').then((result) => {
+                              Swal.fire('Okey by', 'Nanti aku bantuin kamu yaa', 'success').then((result) => {
                                 Swal.fire("See ya! Aku kangen ^^").then((result) => {
                                   selesai()
                                 });
